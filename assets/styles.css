@@ -277,3 +277,80 @@ button {
     border-radius: 50%;
     object-fit: contain;
 }
+
+/* ==================== Services ==================== */
+.service {
+    margin-top: 133px;
+}
+
+.service__heading {
+    max-width: 534px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service__title {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.17857; /* 117.857% */
+}
+
+.service__desc {
+    margin-top: 20px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
+
+.service__list {
+    margin-top: 60px;
+}
+
+.service__item {
+    height: 100%;
+    padding: 33px 42px 32px;
+    background: #fbfaff;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.service__item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(8, 4, 21, 0.08);
+}
+
+.service__item-icon-wrap {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 74px;
+    border: 1px solid rgba(93, 59, 238, 0.2);
+    border-radius: 50%;
+}
+
+.service__item-icon {
+    display: block;
+    max-width: calc(100% - 18px);
+    max-height: calc(100% - 18px);
+    object-fit: contain;
+}
+
+.service__item-title {
+    margin-top: 22px;
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+}
+
+.service__item-desc {
+    margin-top: 15px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
