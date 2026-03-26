@@ -223,3 +223,57 @@ button {
     bottom: -94px;
     z-index: 0;
 }
+
+/* ==================== Clients ==================== */
+.clients {
+    margin-top: 98px;
+}
+
+.clients__inner {
+    display: flex;
+    align-items: center;
+    gap: 105px;
+}
+
+.clients__heading {
+    position: relative;
+    padding-left: 99px;
+}
+
+.clients__line {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 86px;
+    height: 2px;
+    background: #5d3bee;
+}
+
+.clients__title {
+    width: 274px;
+    color: #080415;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19; /* 119.048% */
+}
+
+.clients__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 34px;
+    flex-shrink: 0;
+}
+
+.clients__item {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.clients__item-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: contain;
+}
