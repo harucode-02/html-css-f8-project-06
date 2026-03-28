@@ -23,8 +23,12 @@ button {
 
 /* ==================== Common ==================== */
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 62px;
     padding: 16px 37px;
+    line-height: 1;
     background: #5d3bee;
     text-decoration: none;
     color: #fff;
@@ -947,4 +951,70 @@ button {
 
 .myspace__item:hover .myspace__item-img {
     transform: scale(1.1);
+}
+
+/* ==================== Booking Section ==================== */
+.booking {
+    margin: 140px auto 0 auto;
+    width: 1330px;
+    max-width: 100%;
+    background: #fbfaff;
+    position: relative;
+}
+
+.booking__decor-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.booking__decor-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+.booking__decor-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.booking__wrapper {
+    padding: 68px 0;
+    text-align: center;
+}
+
+.booking__title {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.17857; /* 117.857% */
+    letter-spacing: -2.24px;
+}
+
+.booking__desc {
+    max-width: 570px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.667; /* 166.667% */
+}
+
+.booking__btn {
+    margin-top: 50px;
+    color: #fff;
+}
+
+.booking__btn:hover {
+    opacity: 0.9;
 }
