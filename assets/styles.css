@@ -167,6 +167,7 @@ button {
     font-size: 8rem;
     font-weight: 500;
     line-height: 0.95; /* 95% */
+    letter-spacing: -3.2px;
 }
 
 .hero__desc {
@@ -271,6 +272,7 @@ button {
     font-size: 4.2rem;
     font-weight: 500;
     line-height: 1.19; /* 119.048% */
+    letter-spacing: -1.68px;
 }
 
 .clients__list {
@@ -310,6 +312,7 @@ button {
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.17857; /* 117.857% */
+    letter-spacing: -2.24px;
 }
 
 .service__desc {
@@ -361,6 +364,7 @@ button {
     font-size: 3.2rem;
     font-weight: 500;
     line-height: 1.25; /* 125% */
+    letter-spacing: -1.28px;
 }
 
 .service__item-desc {
