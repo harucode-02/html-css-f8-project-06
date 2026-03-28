@@ -977,6 +977,7 @@ button {
     left: 0;
     object-fit: cover;
     z-index: 0;
+    pointer-events: none;
 }
 
 .booking__decor-center {
@@ -986,6 +987,7 @@ button {
     transform: translate(-50%, -50%);
     object-fit: cover;
     z-index: 0;
+    pointer-events: none;
 }
 
 .booking__decor-right {
@@ -994,9 +996,12 @@ button {
     right: 0;
     object-fit: cover;
     z-index: 0;
+    pointer-events: none;
 }
 
 .booking__wrapper {
+    position: relative;
+    z-index: 1;
     padding: 68px 0;
     text-align: center;
 }
@@ -1020,8 +1025,10 @@ button {
 }
 
 .booking__btn {
+    position: relative; /* Ensure the button is above the decorative elements */
     margin-top: 50px;
     color: #fff;
+    z-index: 2;
 }
 
 .booking__btn:hover {
