@@ -42,9 +42,13 @@ button {
     background: #fbfaff;
 }
 
+.header__container {
+    width: min(1330px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
 .header__inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     min-height: 100px;
 }
@@ -87,6 +91,11 @@ button {
     display: block;
     width: 100px;
     height: 100px;
+    margin-left: 357px;
+}
+
+.navbar {
+    margin-left: 223px;
 }
 
 .navbar__list {
@@ -1017,4 +1026,127 @@ button {
 
 .booking__btn:hover {
     opacity: 0.9;
+}
+
+/* ==================== Footer ==================== */
+.footer {
+    margin-top: 50px;
+}
+
+.footer__container {
+    width: min(1330px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.footer__inner {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+}
+
+.footer__email-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid rgba(93, 59, 238, 0.2);
+    border-radius: 50%;
+}
+
+.footer__letter-icon {
+    width: 24px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.footer__email {
+    text-decoration: none;
+    color: #080415;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36;
+}
+
+.footer__email:hover {
+    text-decoration: underline;
+}
+
+.footer__emoji {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: 357px;
+}
+
+.footer-nav {
+    margin-left: 223px;
+}
+
+.footer-nav__list {
+    display: flex;
+    gap: 43px;
+}
+
+.footer-nav__item a {
+    text-decoration: none;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.footer-nav__item a:hover {
+    text-decoration: underline;
+}
+
+.footer__line {
+    display: inline-block;
+    margin-top: 32px;
+    width: 100%;
+    height: 1px;
+    background: rgba(8, 4, 21, 0.2);
+}
+
+.footer__info {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 515px;
+}
+
+.footer__copyright {
+    color: #525771;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6667; /* 143.75% */
+}
+
+.footer__wrapper {
+    display: flex;
+    gap: 36px;
+}
+
+.footer__wrapper a {
+    text-decoration: none;
+    color: #525771;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6667; /* 143.75% */
+    letter-spacing: -0.54px;
+}
+
+.footer__terms::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background: #525771;
+    margin-right: 13px;
 }
