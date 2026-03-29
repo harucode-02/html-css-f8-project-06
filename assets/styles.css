@@ -139,7 +139,7 @@ button {
 .hero__decor-big {
     position: absolute;
     bottom: 0;
-    left: -68px;
+    left: -216px;
     z-index: 1;
     pointer-events: none;
 }
@@ -158,8 +158,8 @@ button {
 
 .hero__decor-small {
     position: absolute;
-    bottom: 0;
-    right: 60px;
+    bottom: -87px;
+    right: -231px;
     z-index: 0;
     pointer-events: none;
 }
