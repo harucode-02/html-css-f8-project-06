@@ -824,6 +824,10 @@ button {
     cursor: pointer;
 }
 
+.faq__item:first-child .faq__item-head {
+    padding-top: 0;
+}
+
 .faq__item-question {
     display: inline-block;
     color: #080415;
