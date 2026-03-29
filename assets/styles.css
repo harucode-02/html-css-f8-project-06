@@ -131,11 +131,18 @@ button {
 }
 
 .hero__media {
+    position: relative;
     width: 514px;
     height: 705px;
-    position: relative;
 }
 
+.hero__decor-big {
+    position: absolute;
+    bottom: 0;
+    left: -68px;
+    z-index: 1;
+    pointer-events: none;
+}
 .hero__avatar {
     width: 100%;
     height: 100%;
@@ -145,19 +152,25 @@ button {
     flex-shrink: 0;
 }
 
-.hero__decor-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-    flex-shrink: 0;
-}
-
 .hero__content {
     position: relative;
+}
+
+.hero__decor-small {
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero__title,
+.hero__desc,
+.btn__primary,
+.hero__more-info,
+.hero__social-media {
+    position: relative;
+    z-index: 1;
 }
 
 .hero__title {
@@ -232,13 +245,6 @@ button {
 .hero__social-link:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(93, 59, 238, 0.2);
-}
-
-.hero__decor-outline {
-    position: absolute;
-    right: -180px;
-    bottom: -94px;
-    z-index: 0;
 }
 
 /* ==================== Clients ==================== */
