@@ -1108,7 +1108,9 @@ button {
 }
 
 .footer__inner {
+    position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     min-height: 100px;
 }
@@ -1148,14 +1150,12 @@ button {
 }
 
 .footer__emoji {
-    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100px;
     height: 100px;
-    margin-left: 357px;
-}
-
-.footer-nav {
-    margin-left: 223px;
+    pointer-events: none;
 }
 
 .footer-nav__list {
@@ -1185,9 +1185,8 @@ button {
 .footer__info {
     margin-top: 32px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 515px;
 }
 
 .footer__copyright {
