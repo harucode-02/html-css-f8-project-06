@@ -29,13 +29,19 @@ button {
     min-height: 62px;
     padding: 16px 37px;
     line-height: 1;
-    background: #5d3bee;
+    background: var(--color-primary);
     text-decoration: none;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 700;
     cursor: pointer;
     transition: background 0.3s ease;
+}
+
+:root {
+    --color-primary: #5d3bee;
+    --color-secondary: #080415;
+    --color-text: #51586a;
 }
 /* ==================== Header ==================== */
 .header {
@@ -82,7 +88,7 @@ button {
 
 .header__email {
     text-decoration: none;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 2.2rem;
     font-weight: 500;
     line-height: 1.36; /* 136.364% */
@@ -110,7 +116,7 @@ button {
 
 .navbar__link-item a {
     text-decoration: none;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
 }
@@ -176,7 +182,7 @@ button {
 .hero__title {
     width: 527px;
     height: 164px;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 8rem;
     font-weight: 500;
     line-height: 0.95; /* 95% */
@@ -186,7 +192,7 @@ button {
 .hero__desc {
     margin-top: 20px;
     width: 370px;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66; /* 166.667% */
@@ -203,7 +209,7 @@ button {
 .hero__more-info {
     margin-left: 30px;
     text-decoration: none;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.667; /* 166.667% */
@@ -269,12 +275,12 @@ button {
     left: 0;
     width: 86px;
     height: 2px;
-    background: #5d3bee;
+    background: var(--color-primary);
 }
 
 .clients__title {
     width: 274px;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 4.2rem;
     font-weight: 500;
     line-height: 1.19; /* 119.048% */
@@ -314,7 +320,7 @@ button {
 }
 
 .service__title {
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.17857; /* 117.857% */
@@ -323,7 +329,7 @@ button {
 
 .service__desc {
     margin-top: 20px;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66; /* 166.667% */
@@ -366,7 +372,7 @@ button {
 
 .service__item-title {
     margin-top: 22px;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 3.2rem;
     font-weight: 500;
     line-height: 1.25; /* 125% */
@@ -375,7 +381,7 @@ button {
 
 .service__item-desc {
     margin-top: 15px;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66; /* 166.667% */
@@ -384,7 +390,7 @@ button {
 /* ==================== About ==================== */
 .about {
     margin-top: 140px;
-    background: #5d3bee;
+    background: var(--color-primary);
     padding: 86px 0;
 }
 
@@ -458,7 +464,7 @@ button {
 
 .about__item-title {
     max-width: 220px;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 3.2rem;
     font-weight: 500;
     line-height: 1.25; /* 125% */
@@ -469,7 +475,7 @@ button {
 .about__item-desc {
     width: 225px;
     margin-top: 10px;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.4375; /* 143.75% */
@@ -478,7 +484,7 @@ button {
 .about__item-more {
     display: inline-block;
     margin-top: 20px;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.667; /* 166.667% */
@@ -501,7 +507,7 @@ button {
 .about__btn {
     display: flex;
     width: fit-content;
-    color: #080415;
+    color: var(--color-secondary);
     background-color: #fff;
     margin: 80px auto 0;
 }
@@ -547,7 +553,7 @@ button {
 }
 
 .story__eyebrow span {
-    color: #5d3bee;
+    color: var(--color-primary);
     font-size: 3.2rem;
     font-weight: 500;
     line-height: 1.25; /* 125% */
@@ -555,7 +561,7 @@ button {
 
 .story__title {
     margin-top: 10px;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.17857; /* 117.857% */
@@ -564,7 +570,7 @@ button {
 
 .story__desc {
     margin-top: 15px;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.667; /* 166.667% */
@@ -604,7 +610,7 @@ button {
 }
 
 .story__number {
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.35614; /* 135.714% */
@@ -613,7 +619,7 @@ button {
 }
 
 .story__number-desc {
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.667; /* 166.667% */
@@ -658,7 +664,7 @@ button {
     bottom: 10px;
     right: 10px;
     background-color: #fff;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.667; /* 166.667% */
@@ -675,7 +681,7 @@ button {
 }
 
 .reviews-title {
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.17857; /* 117.857% */
@@ -685,7 +691,7 @@ button {
 .reviews-desc {
     max-width: 570px;
     margin: 20px auto 60px;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.667; /* 166.667% */
@@ -694,7 +700,7 @@ button {
 .reviews-quote {
     max-width: 680px;
     margin: 0 auto;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 2.4rem;
     font-weight: 400;
     line-height: 1.667; /* 166.667% */
@@ -730,7 +736,7 @@ button {
 }
 
 .user-name {
-    color: #080415;
+    color: var(--color-secondary);
     text-align: center;
     font-size: 3rem;
     font-weight: 500;
@@ -739,7 +745,7 @@ button {
 
 .user-desc {
     flex-basis: 100%;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.8125; /* 181.25% */
@@ -780,11 +786,11 @@ button {
 }
 
 .reviews-dot-item:hover {
-    border: 1px solid #5d3bee;
+    border: 1px solid var(--color-primary);
 }
 
 .reviews-dot-item:hover::before {
-    background: #5d3bee;
+    background: var(--color-primary);
     transform: scale(0.8);
 }
 
@@ -795,7 +801,7 @@ button {
 
 .faq__title {
     width: 575px;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.17857; /* 117.857% */
@@ -830,7 +836,7 @@ button {
 
 .faq__item-question {
     display: inline-block;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 3.2rem;
     font-weight: 500;
     line-height: 1.25; /* 125% */
@@ -851,7 +857,7 @@ button {
 
 .faq__item-body p {
     max-width: 487px;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.667;
@@ -884,7 +890,7 @@ button {
     left: 50%;
     width: 10px;
     height: 1.5px;
-    background: #080415;
+    background: var(--color-secondary);
     transform: translate(-50%, -50%);
     transition:
         background-color 0.3s ease,
@@ -901,7 +907,7 @@ button {
 
 .faq__item-toggle:checked ~ .faq__item-head .faq__item-question,
 .faq__item-toggle:checked ~ .faq__item-head .faq__item-icon::before {
-    color: #5d3bee;
+    color: var(--color-primary);
 }
 
 .faq__item-toggle:checked ~ .faq__item-head .faq__item-icon {
@@ -910,11 +916,11 @@ button {
 
 .faq__item-toggle:checked ~ .faq__item-head .faq__item-icon::before,
 .faq__item-toggle:checked ~ .faq__item-head .faq__item-icon::after {
-    background: #5d3bee;
+    background: var(--color-primary);
 }
 
 .faq__item:has(.faq__item-toggle:checked) {
-    border-bottom-color: #5d3bee;
+    border-bottom-color: var(--color-primary);
 }
 
 /* ==================== Myspace Section ==================== */
@@ -929,7 +935,7 @@ button {
 }
 
 .myspace__title {
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.17857; /* 117.857% */
@@ -938,7 +944,7 @@ button {
 
 .myspace__desc {
     margin-top: 20px;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.667; /* 166.667% */
@@ -948,7 +954,7 @@ button {
     display: inline-block;
     margin-top: 30px;
     text-decoration: none;
-    color: #5d3bee;
+    color: var(--color-primary);
     font-size: 3.2rem;
     font-weight: 500;
     line-height: 1.25; /* 125% */
@@ -1026,7 +1032,7 @@ button {
 }
 
 .booking__title {
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.17857; /* 117.857% */
@@ -1037,7 +1043,7 @@ button {
     max-width: 570px;
     margin: 0 auto;
     margin-top: 20px;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.667; /* 166.667% */
@@ -1094,7 +1100,7 @@ button {
 
 .footer__email {
     text-decoration: none;
-    color: #080415;
+    color: var(--color-secondary);
     font-size: 2.2rem;
     font-weight: 500;
     line-height: 1.36;
@@ -1122,7 +1128,7 @@ button {
 
 .footer-nav__item a {
     text-decoration: none;
-    color: #51586a;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
 }
@@ -1148,7 +1154,7 @@ button {
 }
 
 .footer__copyright {
-    color: #525771;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.6667; /* 143.75% */
@@ -1161,7 +1167,7 @@ button {
 
 .footer__wrapper a {
     text-decoration: none;
-    color: #525771;
+    color: var(--color-text);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.6667; /* 143.75% */
@@ -1173,6 +1179,6 @@ button {
     display: inline-block;
     width: 1px;
     height: 14px;
-    background: #525771;
+    background: var(--color-text);
     margin-right: 13px;
 }
