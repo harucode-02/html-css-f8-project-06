@@ -1063,6 +1063,11 @@ button {
     text-align: center;
 }
 
+.booking__emoji {
+    display: block;
+    margin: 0 auto;
+}
+
 .booking__title {
     color: var(--color-secondary);
     font-size: 5.6rem;
