@@ -300,9 +300,10 @@ button {
 
 .clients__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     text-align: center;
-    gap: 34px;
+    column-gap: 66px;
+    row-gap: 34px;
     flex-shrink: 0;
 }
 
@@ -317,6 +318,13 @@ button {
     height: 36px;
     border-radius: 50%;
     object-fit: contain;
+}
+
+.clients__item-name {
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.1;
 }
 
 /* ==================== Services ==================== */
