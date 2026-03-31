@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="./assets/responsive.css" />
     </head>
     <body>
-        <!-- Header Navigation -->
+        <!-- PC  Header -->
         <header class="header">
             <div class="header__container">
                 <div class="header__inner">
@@ -62,7 +62,7 @@
                     />
 
                     <nav class="header__nav">
-                        <ul class="header__nav-list">
+                        <ul id="pc-nav" class="header__nav-list">
                             <li class="header__nav-item">
                                 <a href="#!">Projects</a>
                             </li>
@@ -80,6 +80,83 @@
                 </div>
             </div>
         </header>
+
+        <!-- Tablet/Mobile Header -->
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+        <header class="mobile-header">
+            <div class="header__container">
+                <div class="mobile-header__inner">
+                    <img
+                        src="./assets/icons/header-nav-face-emoji-responsive.png"
+                        alt="Face Emoji"
+                        class="mobile-header__emoji"
+                    />
+
+                    <div class="mobile-header__actions">
+                        <a
+                            href="mailto:hi@haru.interactive"
+                            class="header__email-btn"
+                        >
+                            <img
+                                src="./assets/icons/header-nav-letter.svg"
+                                alt="Heart Letter"
+                                class="header__icon-email"
+                            />
+                        </a>
+                        <label
+                            for="menu-checkbox"
+                            class="toggle-menu"
+                            aria-label="Open menu"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="17"
+                                height="2"
+                                viewBox="0 0 17 2"
+                                fill="none"
+                            >
+                                <path
+                                    d="M1 1H16"
+                                    stroke="#5D3BEE"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="17"
+                                height="2"
+                                viewBox="0 0 17 2"
+                                fill="none"
+                            >
+                                <path
+                                    d="M1 1H16"
+                                    stroke="#5D3BEE"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <label for="menu-checkbox" class="menu-overlay"></label>
+        <div class="menu-drawer">
+            <ul id="mobile-nav" class="mobile-nav__list"></ul>
+            <script>
+                const pcNav = document.querySelector("#pc-nav");
+                const mobileNav = document.querySelector("#mobile-nav");
+
+                if (pcNav && mobileNav) {
+                    mobileNav.innerHTML = pcNav.innerHTML;
+                }
+            </script>
+        </div>
 
         <!-- Hero Section -->
         <section class="hero">
