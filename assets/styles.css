@@ -44,16 +44,6 @@ button {
     --color-text: #51586a;
 }
 
-/* Tablet / Mobile Header */
-.mobile-header {
-    display: none;
-}
-
-.header__email-btn,
-.toggle-menu {
-    display: none;
-}
-
 /* ==================== Header ==================== */
 
 .header {

@@ -6,7 +6,8 @@
 
     .mobile-header,
     .menu-overlay,
-    .menu-drawer {
+    .menu-drawer,
+    .menu-checkbox {
         display: none;
     }
 }
@@ -20,14 +21,16 @@
     .mobile-header {
         position: sticky;
         top: 0;
-        display: block;
-        background: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(10px);
+        background: #fbfaff;
+        backdrop-filter: blur(15px);
         z-index: 10;
     }
 
     .header__container {
-        width: min(100%, calc(100% - 40px));
+        width: min(
+            100%,
+            calc(100% - 20px)
+        ); /* Ensure the container doesn't exceed the viewport width */
     }
 
     .mobile-header__inner {
@@ -35,6 +38,13 @@
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid #d6d3e2;
+    }
+
+    .mobile-header__actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
     .mobile-header__emoji {
@@ -51,13 +61,6 @@
         border-radius: 50%;
     }
 
-    .mobile-header__actions {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
     .header__icon-email {
         width: 16.696px;
         height: 11.13px;
@@ -65,7 +68,7 @@
     }
 
     .toggle-menu {
-        display: inline-flex;
+        display: inline-flex; /* Use inline-flex to prevent it from taking full width */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -77,27 +80,28 @@
     }
 
     .menu-overlay {
-        position: fixed;
-        inset: 0;
+        position: fixed; /* Use fixed to cover the entire viewport */
+        inset: 0; /* Shorthand for top: 0; right: 0; bottom: 0; left: 0; */
         background: rgba(0, 0, 0, 0.3);
-        opacity: 0;
-        visibility: hidden;
+        opacity: 0; /* Start hidden */
+        visibility: hidden; /* Hide from screen readers and prevent interaction */
         transition:
             opacity 0.5s ease,
             visibility 0.5s ease;
-        z-index: 999;
+        z-index: 999; /* Ensure it is below the menu drawer but above other content */
     }
 
     .menu-drawer {
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 1000;
-        height: 100vh;
+        z-index: 1000; /* Ensure it is above the menu overlay */
+        height: 100vh; /* Full viewport height */
         background: #fff;
-        transform: translateX(100%);
+        transform: translateX(100%); /* Start off-screen to the right */
         transition: transform 0.5s ease;
     }
+
     .mobile-nav__list {
         display: flex;
         flex-direction: column;
@@ -118,13 +122,38 @@
     }
 
     .menu-checkbox:checked ~ .menu-overlay {
+        /* Show the overlay when the menu is open */
         opacity: 1;
         visibility: visible;
     }
 
     .menu-checkbox:checked ~ .menu-drawer {
+        /* Slide the menu drawer in when the menu is open */
         transform: translateX(0);
     }
+
+    .hero__media-col {
+        order: 2; /* Move the media column below the content column on smaller screens */
+    }
+
+    .hero__content-col {
+        order: 1; /* Move the content column above the media column on smaller screens */
+    }
+
+    .hero {
+        padding-top: 20px;
+        overflow: hidden;
+    }
+
+    .hero__inner {
+        row-gap: 20px;
+    }
+
+    .hero__content {
+        margin-left: 0;
+    }
+
+    .clie
 }
 
 /* Mobile */
@@ -144,7 +173,59 @@
     }
 
     .menu-drawer {
-        width: min(320px, 80%);
-        padding: 80px 24px 24px;
+        width: min(320px, 80%); /* Set a max width for the menu drawer */
+        padding: 60px 24px 24px;
+    }
+
+    .hero__decor-small {
+        display: none;
+    }
+
+    .hero__content {
+        margin-left: 20px;
+    }
+
+    .hero__title {
+        width: 260px;
+        max-width: 100%;
+        font-size: 4.2rem;
+        line-height: 1.19; /* 119.048% */
+        letter-spacing: -1.68px;
+    }
+
+    .hero__desc {
+        width: 318px;
+        max-width: 100%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.625; /* 162.5% */
+    }
+
+    .hero__actions {
+        margin-top: 30px;
+    }
+
+    .btn__primary {
+        padding: 12px 31px;
+        font-size: 1.6rem;
+    }
+
+    .hero__more-info {
+        font-size: 1.6rem;
+    }
+
+    .hero__social-media {
+        margin-top: 25px;
+    }
+
+    .hero__media {
+        max-width: 259px;
+        margin: 0 auto;
+    }
+
+    .hero__decor-big {
+        max-width: 543.709px;
+        bottom: -21%;
+        left: -55%;
     }
 }
