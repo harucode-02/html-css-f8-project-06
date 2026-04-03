@@ -336,60 +336,127 @@
                     </p>
                 </div>
 
-                <div class="row service__list">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="service__item">
-                            <div class="service__item-icon-wrap">
-                                <img
-                                    src="./assets/icons/service-light.svg"
-                                    alt="Product Design Icon"
-                                    class="service__item-icon"
-                                />
+                <!-- Service Slider -->
+                <div class="service__slider">
+                    <div class="row service__list" id="service-list">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="service__item">
+                                <div class="service__item-icon-wrap">
+                                    <img
+                                        src="./assets/icons/service-light.svg"
+                                        alt="Product Design Icon"
+                                        class="service__item-icon"
+                                    />
+                                </div>
+                                <h3 class="service__item-title">
+                                    Product design
+                                </h3>
+                                <p class="service__item-desc">
+                                    From early product thinking to interface
+                                    systems, I turn ideas into clear journeys
+                                    users can actually enjoy.
+                                </p>
                             </div>
-                            <h3 class="service__item-title">Product design</h3>
-                            <p class="service__item-desc">
-                                From early product thinking to interface
-                                systems, I turn ideas into clear journeys users
-                                can actually enjoy.
-                            </p>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="service__item">
-                            <div class="service__item-icon-wrap">
-                                <img
-                                    src="./assets/icons/service-pencil-ruler.svg"
-                                    alt="UI/UX Design Icon"
-                                    class="service__item-icon"
-                                />
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="service__item">
+                                <div class="service__item-icon-wrap">
+                                    <img
+                                        src="./assets/icons/service-pencil-ruler.svg"
+                                        alt="UI/UX Design Icon"
+                                        class="service__item-icon"
+                                    />
+                                </div>
+                                <h3 class="service__item-title">
+                                    UI/UX Design
+                                </h3>
+                                <p class="service__item-desc">
+                                    I translate research, structure, and
+                                    behavior into screens that feel intuitive,
+                                    consistent, and easy to use.
+                                </p>
                             </div>
-                            <h3 class="service__item-title">UI/UX Design</h3>
-                            <p class="service__item-desc">
-                                I translate research, structure, and behavior
-                                into screens that feel intuitive, consistent,
-                                and easy to use.
-                            </p>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="service__item">
-                            <div class="service__item-icon-wrap">
-                                <img
-                                    src="./assets/icons/service-phone.svg"
-                                    alt="Interactive Design Icon"
-                                    class="service__item-icon"
-                                />
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="service__item">
+                                <div class="service__item-icon-wrap">
+                                    <img
+                                        src="./assets/icons/service-phone.svg"
+                                        alt="Interactive Design Icon"
+                                        class="service__item-icon"
+                                    />
+                                </div>
+                                <h3 class="service__item-title">
+                                    Interactive Design
+                                </h3>
+                                <p class="service__item-desc">
+                                    I design motion, feedback, and interface
+                                    states that make products feel responsive
+                                    and alive.
+                                </p>
                             </div>
-                            <h3 class="service__item-title">
-                                Interactive Design
-                            </h3>
-                            <p class="service__item-desc">
-                                I design motion, feedback, and interface states
-                                that make products feel responsive and alive.
-                            </p>
                         </div>
                     </div>
                 </div>
+
+                <div class="service__dots" id="service-dots">
+                    <button
+                        class="service__dot service__dot-active"
+                        data-index="0"
+                        type="button"
+                    ></button>
+                    <button
+                        class="service__dot"
+                        data-index="1"
+                        type="button"
+                    ></button>
+                    <button
+                        class="service__dot"
+                        data-index="2"
+                        type="button"
+                    ></button>
+                </div>
+
+                <script>
+                    const serviceList = document.querySelector("#service-list");
+                    const serviceDots =
+                        document.querySelectorAll(".service__dot");
+
+                    if (serviceList && serviceDots.length) {
+                        const updateServiceSlider = (index) => {
+                            serviceDots.forEach((dot, dotIndex) => {
+                                dot.classList.toggle(
+                                    "service__dot-active",
+                                    dotIndex === index,
+                                );
+                            });
+
+                            if (window.innerWidth <= 767.98) {
+                                serviceList.style.transform = `translateX(-${index * 100}%)`;
+                            } else {
+                                serviceList.style.transform = "";
+                            }
+                        };
+
+                        serviceDots.forEach((dot) => {
+                            dot.addEventListener("click", () => {
+                                updateServiceSlider(Number(dot.dataset.index));
+                            });
+                        });
+
+                        window.addEventListener("resize", () => {
+                            const activeDot = document.querySelector(
+                                ".service__dot-active",
+                            );
+                            const activeIndex = activeDot
+                                ? Number(activeDot.dataset.index)
+                                : 0;
+                            updateServiceSlider(activeIndex);
+                        });
+
+                        updateServiceSlider(0);
+                    }
+                </script>
             </div>
         </section>
 
