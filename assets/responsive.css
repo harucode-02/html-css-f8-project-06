@@ -37,6 +37,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        min-height: 72px;
         border-bottom: 1px solid #d6d3e2;
     }
 
@@ -49,6 +50,7 @@
 
     .mobile-header__emoji {
         display: block;
+        width: 50px;
         height: auto;
         pointer-events: none;
     }
@@ -57,6 +59,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 40px;
+        height: 40px;
         border: 1px solid rgba(93, 59, 238, 0.2);
         border-radius: 50%;
     }
@@ -73,9 +77,12 @@
         justify-content: center;
         align-items: center;
         gap: 4px;
+        width: 40px;
+        height: 40px;
         border: 1px solid rgba(93, 59, 238, 0.2);
         border-radius: 50%;
         background: transparent;
+        padding: 0;
         cursor: pointer;
     }
 
