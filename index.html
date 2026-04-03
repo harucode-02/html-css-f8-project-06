@@ -647,7 +647,7 @@
                         </svg>
                     </button>
                     <a href="#!" class="btn story__intro-video">
-                        <span>Watch Intro</span>
+                        <span>INTRO VIDEO</span>
                     </a>
                 </div>
                 <div class="story__reviews">
@@ -659,39 +659,200 @@
                             product thinking.
                         </p>
                     </div>
-                    <div class="reviews-list">
-                        <div class="reviews-quote">
-                            <blockquote>
-                                “Haru brings clarity to complex product ideas
-                                and turns rough concepts into interfaces that
-                                feel polished, thoughtful, and easy to use.”
-                            </blockquote>
-                        </div>
-                        <div class="user-info">
-                            <div class="user-avatar-wrap">
-                                <img
-                                    src="./assets/images/story-avatar.svg"
-                                    alt="User Avatar"
-                                    class="user-avatar"
-                                />
+                    <div class="reviews-slider">
+                        <div class="reviews-list" id="reviews-list">
+                            <div class="reviews-item reviews-item--active">
+                                <div class="reviews-quote">
+                                    <blockquote>
+                                        “Haru brings clarity to complex product
+                                        ideas and turns rough concepts into
+                                        interfaces that feel polished,
+                                        thoughtful, and easy to use.”
+                                    </blockquote>
+                                </div>
+                                <div class="user-info">
+                                    <div
+                                        class="user-avatar-wrap user-avatar-wrap--orange"
+                                    >
+                                        <img
+                                            src="./assets/images/story-avatar-01.svg"
+                                            alt="Joe Elia"
+                                            class="user-avatar"
+                                        />
+                                    </div>
+                                    <span class="user-name">Joe Elia</span>
+                                    <p class="user-desc">
+                                        User Interface Design at PCL Lab
+                                    </p>
+                                </div>
                             </div>
-                            <span class="user-name">Joe Elia</span>
-                            <p class="user-desc">
-                                User Interface Design at PCL Lab
-                            </p>
-                        </div>
 
+                            <div class="reviews-item">
+                                <div class="reviews-quote">
+                                    <blockquote>
+                                        “He works with structure, asks the right
+                                        questions early, and consistently turns
+                                        feedback into practical design
+                                        improvements.”
+                                    </blockquote>
+                                </div>
+                                <div class="user-info">
+                                    <div
+                                        class="user-avatar-wrap user-avatar-wrap--blue"
+                                    >
+                                        <img
+                                            src="./assets/images/story-avatar-02.jpg"
+                                            alt="Ava Collins"
+                                            class="user-avatar"
+                                        />
+                                    </div>
+                                    <span class="user-name">Ava Collins</span>
+                                    <p class="user-desc">
+                                        Product Manager at North Studio
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="reviews-item">
+                                <div class="reviews-quote">
+                                    <blockquote>
+                                        “What stood out most was the balance
+                                        between visual quality and usability.
+                                        The final screens felt elegant without
+                                        sacrificing clarity.”
+                                    </blockquote>
+                                </div>
+                                <div class="user-info">
+                                    <div
+                                        class="user-avatar-wrap user-avatar-wrap--green"
+                                    >
+                                        <img
+                                            src="./assets/images/story-avatar-03.jpg"
+                                            alt="Mia Foster"
+                                            class="user-avatar"
+                                        />
+                                    </div>
+                                    <span class="user-name">Mia Foster</span>
+                                    <p class="user-desc">
+                                        Brand Designer at Lumio Creative
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="reviews-item">
+                                <div class="reviews-quote">
+                                    <blockquote>
+                                        “Communication was smooth from kickoff
+                                        to handoff. Every iteration was easier
+                                        to review because the rationale was
+                                        always clear.”
+                                    </blockquote>
+                                </div>
+                                <div class="user-info">
+                                    <div
+                                        class="user-avatar-wrap user-avatar-wrap--pink"
+                                    >
+                                        <img
+                                            src="./assets/images/story-avatar-04.jpg"
+                                            alt="Noah Bennett"
+                                            class="user-avatar"
+                                        />
+                                    </div>
+                                    <span class="user-name">Noah Bennett</span>
+                                    <p class="user-desc">
+                                        Founder at Pixel Foundry
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="reviews-item">
+                                <div class="reviews-quote">
+                                    <blockquote>
+                                        “Haru helped us simplify the product
+                                        experience without losing personality.
+                                        The work felt intentional from detail to
+                                        detail.”
+                                    </blockquote>
+                                </div>
+                                <div class="user-info">
+                                    <div
+                                        class="user-avatar-wrap user-avatar-wrap--purple"
+                                    >
+                                        <img
+                                            src="./assets/images/story-avatar-05.jpg"
+                                            alt="Sophie Turner"
+                                            class="user-avatar"
+                                        />
+                                    </div>
+                                    <span class="user-name">Sophie Turner</span>
+                                    <p class="user-desc">
+                                        UX Lead at Orbit Labs
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="reviews-dot">
-                            <span class="reviews-dot-item"></span>
-                            <span class="reviews-dot-item"></span>
-                            <span class="reviews-dot-item"></span>
-                            <span class="reviews-dot-item"></span>
-                            <span class="reviews-dot-item"></span>
+                            <button
+                                class="reviews-dot-item reviews-dot-item--active"
+                                data-index="0"
+                                type="button"
+                                aria-label="Show review 1"
+                            ></button>
+                            <button
+                                class="reviews-dot-item"
+                                data-index="1"
+                                type="button"
+                                aria-label="Show review 2"
+                            ></button>
+                            <button
+                                class="reviews-dot-item"
+                                data-index="2"
+                                type="button"
+                                aria-label="Show review 3"
+                            ></button>
+                            <button
+                                class="reviews-dot-item"
+                                data-index="3"
+                                type="button"
+                                aria-label="Show review 4"
+                            ></button>
+                            <button
+                                class="reviews-dot-item"
+                                data-index="4"
+                                type="button"
+                                aria-label="Show review 5"
+                            ></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            const reviewsList = document.querySelector("#reviews-list");
+            const reviewsDots = document.querySelectorAll(".reviews-dot-item");
+
+            if (reviewsList && reviewsDots.length) {
+                const updateReviews = (index) => {
+                    reviewsDots.forEach((dot, dotIndex) => {
+                        dot.classList.toggle(
+                            "reviews-dot-item--active",
+                            dotIndex === index
+                        );
+                    });
+
+                    reviewsList.style.transform = `translateX(-${index * 100}%)`;
+                };
+
+                reviewsDots.forEach((dot) => {
+                    dot.addEventListener("click", () => {
+                        updateReviews(Number(dot.dataset.index));
+                    });
+                });
+
+                updateReviews(0);
+            }
+        </script>
 
         <!-- Faq Section -->
         <div class="faq">

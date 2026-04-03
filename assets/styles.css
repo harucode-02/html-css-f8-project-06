@@ -539,6 +539,7 @@ button {
     margin-top: 140px;
     background: #fff;
     position: relative;
+    padding-bottom: 74px;
 }
 
 .story__decor-bg-left {
@@ -695,7 +696,7 @@ button {
 }
 
 .story__reviews {
-    margin: 150px auto 74px;
+    margin: 150px auto 0;
     text-align: center;
 }
 
@@ -720,10 +721,20 @@ button {
     line-height: 1.667; /* 166.667% */
 }
 
+.reviews-slider {
+    overflow: hidden; /* Hide the overflowing content to create a slider effect */
+}
+
 .reviews-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+    width: 100%; /* Set the width to accommodate all items in a single row */
+    transition: transform 0.4s ease; /* Smooth transition for sliding effect */
+}
+
+.reviews-item {
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .reviews-quote {
@@ -754,6 +765,27 @@ button {
     border-radius: 50%;
     background: #f29764;
     overflow: hidden;
+}
+
+/* User Avatar Wraps (Background Colors) */
+.user-avatar-wrap--orange {
+    background: #f29764;
+}
+
+.user-avatar-wrap--blue {
+    background: #7fb3ff;
+}
+
+.user-avatar-wrap--green {
+    background: #76c893;
+}
+
+.user-avatar-wrap--pink {
+    background: #f7a8b8;
+}
+
+.user-avatar-wrap--purple {
+    background: #b8a1ff;
 }
 
 .user-avatar {
@@ -789,11 +821,15 @@ button {
 
 .reviews-dot-item {
     position: relative;
-    display: inline-flex; /* Use inline-flex to allow the dots to be sized based on their content */
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 20px;
     height: 20px;
+    padding: 0;
+    flex-shrink: 0;
+    appearance: none;
+    -webkit-appearance: none;
     border-radius: 50%;
     background: transparent;
     border: 1px solid transparent;
@@ -804,6 +840,10 @@ button {
 }
 
 .reviews-dot-item:hover {
+    border: 1px solid var(--color-primary);
+}
+
+.reviews-dot-item--active {
     border: 1px solid var(--color-primary);
 }
 
@@ -820,6 +860,11 @@ button {
 }
 
 .reviews-dot-item:hover::before {
+    background: var(--color-primary);
+    transform: scale(0.8);
+}
+
+.reviews-dot-item--active::before {
     background: var(--color-primary);
     transform: scale(0.8);
 }
