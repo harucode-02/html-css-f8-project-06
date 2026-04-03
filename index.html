@@ -826,33 +826,33 @@
                     </div>
                 </div>
             </div>
+            <script>
+                const reviewsList = document.querySelector("#reviews-list");
+                const reviewsDots =
+                    document.querySelectorAll(".reviews-dot-item");
+
+                if (reviewsList && reviewsDots.length) {
+                    const updateReviews = (index) => {
+                        reviewsDots.forEach((dot, dotIndex) => {
+                            dot.classList.toggle(
+                                "reviews-dot-item--active",
+                                dotIndex === index,
+                            );
+                        });
+
+                        reviewsList.style.transform = `translateX(-${index * 100}%)`;
+                    };
+
+                    reviewsDots.forEach((dot) => {
+                        dot.addEventListener("click", () => {
+                            updateReviews(Number(dot.dataset.index));
+                        });
+                    });
+
+                    updateReviews(0);
+                }
+            </script>
         </div>
-
-        <script>
-            const reviewsList = document.querySelector("#reviews-list");
-            const reviewsDots = document.querySelectorAll(".reviews-dot-item");
-
-            if (reviewsList && reviewsDots.length) {
-                const updateReviews = (index) => {
-                    reviewsDots.forEach((dot, dotIndex) => {
-                        dot.classList.toggle(
-                            "reviews-dot-item--active",
-                            dotIndex === index
-                        );
-                    });
-
-                    reviewsList.style.transform = `translateX(-${index * 100}%)`;
-                };
-
-                reviewsDots.forEach((dot) => {
-                    dot.addEventListener("click", () => {
-                        updateReviews(Number(dot.dataset.index));
-                    });
-                });
-
-                updateReviews(0);
-            }
-        </script>
 
         <!-- Faq Section -->
         <div class="faq">

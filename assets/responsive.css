@@ -16,6 +16,13 @@
     }
 }
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about__item-img {
+        display: none;
+    }
+}
+
 /* Tablet & Mobile */
 @media (max-width: 991.98px) {
     .header {
@@ -287,10 +294,6 @@
         letter-spacing: -1.28px;
     }
 
-    .about__item-img {
-        display: none;
-    }
-
     .about__item-desc {
         width: 200px;
         margin-top: 10px;
@@ -315,6 +318,39 @@
     .story {
         margin-top: 120px;
     }
+
+    .story__reviews {
+        margin-top: 120px;
+    }
+
+    .reviews-title {
+        font-size: 3.6rem;
+        line-height: 1.16667; /* 116.667% */
+        letter-spacing: -1.44px;
+    }
+
+    .reviews-desc {
+        width: 350px;
+        font-size: 1.6rem;
+        line-height: 1.625; /* 162.5% */
+        margin: 20px auto 40px;
+    }
+
+    .reviews-quote {
+        font-size: 1.8rem;
+    }
+
+    .user-info {
+        margin-top: 48px;
+    }
+
+    .user-name {
+        font-size: 2.4rem;
+    }
+
+    .reviews-dot {
+        margin-top: 20px;
+    }
 }
 
 /* Mobile */
@@ -336,10 +372,6 @@
     .menu-drawer {
         width: min(320px, 80%); /* Set a max width for the menu drawer */
         padding: 60px 24px 24px;
-    }
-
-    .about__title {
-        width: 300px;
     }
 
     .about__desc {
@@ -372,10 +404,6 @@
         margin-top: 0;
         font-size: 1.6rem;
         line-height: 1.75;
-    }
-
-    .hero__decor-small {
-        display: none;
     }
 
     .hero__content {
@@ -448,6 +476,8 @@
     .service__list > .col-lg-4 {
         flex: 0 0 100%; /* Make each item take full width of the container */
         max-width: 100%; /* Ensure the item doesn't exceed the container width */
+        padding-left: 0; /* Remove left padding to prevent extra space on the left side */
+        padding-right: 0; /* Remove right padding to prevent extra space on the right side */
     }
 
     .service__dots {
@@ -557,39 +587,6 @@
         padding: 7px 21px;
         font-size: 1.2rem;
         min-height: 44px;
-    }
-
-    .story__reviews {
-        margin-top: 120px;
-    }
-
-    .reviews-title {
-        font-size: 3.6rem;
-        line-height: 1.16667; /* 116.667% */
-        letter-spacing: -1.44px;
-    }
-
-    .reviews-desc {
-        width: 350px;
-        font-size: 1.6rem;
-        line-height: 1.625; /* 162.5% */
-        margin: 20px auto 40px;
-    }
-
-    .reviews-quote {
-        font-size: 1.8rem;
-    }
-
-    .user-info {
-        margin-top: 48px;
-    }
-
-    .user-name {
-        font-size: 2.4rem;
-    }
-
-    .reviews-dot {
-        margin-top: 20px;
     }
 
     .story__decor-bg-left {
